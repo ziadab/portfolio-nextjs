@@ -2,6 +2,70 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "GTWalsheimPro";
+  src: url("../assets/fonts/GTWalsheimProBlack.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GTWalsheimPro";
+  src: url("../assets/fonts/GTWalsheimProBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GTWalsheimPro";
+  src: url("../assets/fonts/GTWalsheimProLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GTWalsheimPro";
+  src: url("../assets/fonts/GTWalsheimProMedium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GTWalsheimPro";
+  src: url("../assets/fonts/GTWalsheimProThin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GTWalsheimPro";
+  src: url("../assets/fonts/GTWalsheimProRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GTWalsheimPro";
+  src: url("../assets/fonts/GTWalsheimProUltraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GTWalsheimPro";
+  src: url("../assets/fonts/GTWalsheimProUltraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
 html,
 body {
   padding: 0;
