@@ -1,15 +1,27 @@
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { HideContext } from "pages/_app";
+import { useContext } from "react";
+import clsx from "clsx";
 
 export const Navbar = ({}: NavbarProps) => {
+  const hide = useContext(HideContext);
+
   return (
-    <header>
-      <div className="max-w-screen-xl pt-20 px-24 pb-10 mx-auto">
+    <motion.header
+      initial={{ y: -200 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 1.2, delay: 0.5 }}
+      className={clsx(!hide && "text-white")}
+    >
+      <div className="max-w-screen-xl lg:pt-20 lg:px-24 lg:pb-10 p-8 mx-auto">
         <div className="flex items-center justify-between space-x-4 lg:space-x-10">
           <div className="flex lg:w-0 lg:flex-1">
-            <span className="w-20 h-10 bg-gray-200 rounded-lg"></span>
+            {/* <span className="w-20 h-10 bg-gray-200 rounded-lg"></span> */}
+            <span className="font-custom font-medium text-lg">Ziad</span>
           </div>
 
-          <nav className="hidden space-x-8 text-sm font-costume md:flex">
+          <nav className="hidden space-x-8 text-lg font-custom font-light md:flex">
             <Link className="text-black font-small text-lg" href="">
               About
             </Link>
@@ -48,7 +60,7 @@ export const Navbar = ({}: NavbarProps) => {
           </div>
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 };
 
