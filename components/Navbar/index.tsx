@@ -6,6 +6,7 @@ import { HamburgerIcon } from "@chakra-ui/icons";
 import { useDisclosure } from "@chakra-ui/react";
 import clsx from "clsx";
 import { CustomDrawer } from "components/CustomDrawer";
+import { Links } from "constants/links";
 
 export const Navbar = ({}: NavbarProps) => {
   const hide = useContext(HideContext);
@@ -26,18 +27,13 @@ export const Navbar = ({}: NavbarProps) => {
           </div>
 
           <nav className="hidden space-x-8 text-lg font-custom font-light md:flex">
-            <Link className="text-black font-small text-lg" href="">
-              About
-            </Link>
-            <Link className="text-black" href="">
-              Blog
-            </Link>
-            <Link className="text-black" href="">
-              Projects
-            </Link>
-            <Link className="text-black" href="">
-              Contact
-            </Link>
+            {Links.map((link, index) => {
+              return (
+                <Link key={index} href={link.path}>
+                  {link.text}
+                </Link>
+              );
+            })}
           </nav>
 
           <div className="lg:hidden">

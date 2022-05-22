@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useContext } from "react";
 import { HideContext } from "pages/_app";
 import { Layout } from "components/Layout";
+
 import clsx from "clsx";
 
 export const Hero = ({}: HeroProps) => {
