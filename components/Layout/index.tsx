@@ -1,14 +1,11 @@
-import clsx from "clsx";
-
-export const Layout = ({ children, hide }: LayoutProps) => {
+export const Layout = ({ children }: LayoutProps) => {
   return (
-    <div className="max-w-screen-xl lg:pt-20 lg:px-24 lg:pb-10 p-8 mx-auto transition-all">
+    <section className="max-w-screen-xl lg:pt-20 lg:px-24 lg:pb-10 p-8 mx-auto transition-all">
       {children}
-    </div>
+    </section>
   );
 };
 
 export interface LayoutProps {
   children: React.ReactNode;
-  hide: boolean;
 }

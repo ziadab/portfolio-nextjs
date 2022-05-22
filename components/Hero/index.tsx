@@ -10,9 +10,9 @@ export const Hero = ({}: HeroProps) => {
   const hide = useContext(HideContext);
 
   return (
-    <Layout hide={hide}>
+    <Layout>
       <div
-        style={{ height: "calc(100vh - 2.5rem - 5rem)" }}
+        style={{ height: "calc(100vh -  15rem)" }}
         className={clsx(
           "flex items-c enter justify-between",
           !hide && "text-white"
@@ -24,7 +24,7 @@ export const Hero = ({}: HeroProps) => {
           transition={{ duration: 1 }}
           className="flex flex-col lg:justify-start lg:w-3/6 items-start"
         >
-          <h1 className="lg:text-8xl font-custom font-thin pt-10 lg:pt-0 text-4xl">
+          <h1 className="lg:text-8xl font-custom font-thin pt-20 lg:pt-0 text-4xl">
             Hi, my <br />
             name is <span className="font-normal">Ziad</span>
           </h1>
@@ -40,6 +40,7 @@ export const Hero = ({}: HeroProps) => {
           initial={{ x: "200%" }}
           animate={{ x: 0 }}
           transition={{ duration: 1, delay: 0.5 }}
+          className="hidden lg:block"
         >
           <Image
             className="rounded-full"
