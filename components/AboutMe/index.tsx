@@ -28,7 +28,7 @@ export const AboutMe = ({}: AboutMeProps) => {
           initial="hidden"
           animate={h1control}
           transition={{ duration: 0.6 }}
-          className="text-black font-custom font-medium tracking-wide text-2xl"
+          className="text-black font-custom font-medium tracking-wide text-5xl"
         >
           About Me
         </motion.h1>
@@ -38,7 +38,7 @@ export const AboutMe = ({}: AboutMeProps) => {
           animate={h1control}
           initial="hidden"
           transition={{ duration: 0.6, delay: 0.4 }}
-          className="font-custom text-black font-thin text-lg lg:w-3/6 pt-5"
+          className="font-custom text-black font-thin text-xl lg:w-3/5 pt-12"
         >
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
           labore dolorum beatae error similique nisi eius suscipit, numquam
