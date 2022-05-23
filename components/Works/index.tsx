@@ -1,9 +1,13 @@
+import { useMediaQuery } from "@chakra-ui/react";
 import { Layout } from "components/Layout";
+import { WorkCard } from "components/WorkCard";
 import { motion, useAnimation } from "framer-motion";
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
 export const Works = ({}: WorksProps) => {
+  const isMid = useMediaQuery("only screen and (min-width: 1024px)");
+
   const control = useAnimation();
   const [ref, inView] = useInView({
     threshold: 1,
@@ -33,6 +37,27 @@ export const Works = ({}: WorksProps) => {
         >
           Work
         </motion.h1>
+        <div className=" lg:flex lg:justify-between lg:pt-44 pt-12">
+          <div className="lg:flex lg:flex-col">
+            <WorkCard className="lg:relative" />
+            <WorkCard
+              style={isMid ? { right: "9rem", top: "4rem" } : {}}
+              className="lg:relative"
+            />
+            <WorkCard className="lg:relative" />
+          </div>
+          <div className="lg:flex lg:flex-col">
+            <WorkCard
+              style={isMid ? { left: "8rem", top: "-8rem" } : {}}
+              className="lg:relative"
+            />
+            <WorkCard
+              style={isMid ? { top: "8rem" } : {}}
+              className="lg:relative"
+            />
+            <WorkCard className="lg:relative" />
+          </div>
+        </div>
       </Layout>
     </React.Fragment>
   );
