@@ -38,32 +38,16 @@ export const Works = ({}: WorksProps) => {
           Work
         </motion.h1>
         {/* <WorkCard /> */}
-        <div className=" lg:flex lg:justify-between lg:pt-44 pt-12">
+        <div className="lg:flex lg:justify-between lg:pt-30 pt-12">
           <div className="lg:flex lg:flex-col lg:w-3/6">
-            <WorkCard className="lg:relative" />
-            <WorkCard
-              style={isMid ? { right: "9rem", top: "4rem" } : {}}
-              className="lg:relative lg:w-[30rem]"
-              classNameTextBox="lg:px-24"
-            />
-            <WorkCard
-              className="lg:relative"
-              style={isMid ? { top: "5rem" } : {}}
-            />
+            <WorkCard className="lg:pr-12" />
+            <WorkCard className="lg:pr-12" />
+            <WorkCard className="lg:pr-12" />
           </div>
           <div className="lg:flex lg:flex-col lg:w-3/6">
-            <WorkCard
-              style={isMid ? { left: "8rem", top: "-8rem" } : {}}
-              className="lg:relative"
-            />
-            <WorkCard
-              style={isMid ? { top: "15rem", left: "2.1rem" } : {}}
-              className="lg:relative lg:w-[40rem]"
-            />
-            <WorkCard
-              className="lg:relative"
-              style={isMid ? { top: "16rem" } : {}}
-            />
+            <WorkCard className="lg:pl-12" />
+            <WorkCard className="lg:pl-12" />
+            <WorkCard className="lg:pl-12" />
           </div>
         </div>
       </Layout>
