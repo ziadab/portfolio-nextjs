@@ -1,4 +1,4 @@
-import { AboutMe, Hero, Works } from "components";
+import { AboutMe, Hero, SelectedClient, Works } from "components";
 import type { NextPage } from "next";
 const Home: NextPage = () => {
   return (
@@ -6,6 +6,7 @@ const Home: NextPage = () => {
       <Hero />
       <AboutMe />
       <Works />
+      <SelectedClient />
     </>
   );
 };

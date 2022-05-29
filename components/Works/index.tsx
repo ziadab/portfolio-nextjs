@@ -25,33 +25,31 @@ export const Works = ({}: WorksProps) => {
   };
 
   return (
-    <React.Fragment>
-      <Layout>
-        <motion.h1
-          variants={boxVariant}
-          initial="hidden"
-          animate={control}
-          transition={{ duration: 0.6 }}
-          ref={ref}
-          className="font-custom font-medium text-5xl"
-        >
-          Work
-        </motion.h1>
-        {/* <WorkCard /> */}
-        <div className="lg:flex lg:justify-between lg:pt-30 pt-12">
-          <div className="lg:flex lg:flex-col lg:w-3/6">
-            <WorkCard className="lg:pr-12" />
-            <WorkCard className="lg:pr-12" />
-            <WorkCard className="lg:pr-12" />
-          </div>
-          <div className="lg:flex lg:flex-col lg:w-3/6">
-            <WorkCard className="lg:pl-12" />
-            <WorkCard className="lg:pl-12" />
-            <WorkCard className="lg:pl-12" />
-          </div>
+    <Layout>
+      <motion.h1
+        variants={boxVariant}
+        initial="hidden"
+        animate={control}
+        transition={{ duration: 0.6 }}
+        ref={ref}
+        className="font-custom font-medium text-5xl"
+      >
+        Work
+      </motion.h1>
+      {/* <WorkCard /> */}
+      <div className="lg:flex lg:justify-between lg:pt-30 pt-12">
+        <div className="lg:flex lg:flex-col lg:w-3/6">
+          <WorkCard className="lg:pr-12" />
+          <WorkCard className="lg:pr-12" />
+          <WorkCard className="lg:pr-12" />
         </div>
-      </Layout>
-    </React.Fragment>
+        <div className="lg:flex lg:flex-col lg:w-3/6">
+          <WorkCard className="lg:pl-12" />
+          <WorkCard className="lg:pl-12" />
+          <WorkCard className="lg:pl-12" />
+        </div>
+      </div>
+    </Layout>
   );
 };
 
