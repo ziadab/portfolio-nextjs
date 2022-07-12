@@ -4,16 +4,8 @@ import { SVGProps } from "react";
 const SvgAiesec = (props: SVGProps<SVGSVGElement>) => (
   <svg
     id="aiesec_svg__Layer_1"
-    xmlns="http://www.w3.org/2000/svg"
-    x={0}
-    y={0}
     viewBox="0 0 1188.2 168.8"
-    style={{
-      enableBackground: "new 0 0 1188.2 168.8",
-    }}
-    xmlSpace="preserve"
-    width="1em"
-    height="1em"
+    xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
     <style>{".aiesec_svg__st0{fill:#fff}"}</style>

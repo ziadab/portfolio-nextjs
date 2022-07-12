@@ -24,57 +24,57 @@ export const SelectedClient = ({}: SelectedClientProps) => {
   return (
     <Layout>
       <motion.h1
-        variants={boxVariant}
-        initial="hidden"
         animate={control}
-        transition={{ duration: 0.6 }}
+        className="font-custom text-5xl font-medium text-black"
+        initial="hidden"
         ref={ref}
-        className="font-custom font-medium text-5xl text-black"
+        transition={{ duration: 0.6 }}
+        variants={boxVariant}
       >
         Selected client:
       </motion.h1>
-      <div className="flex justify-center items-center flex-wrap mt-6 lg:mt-8">
-        <div className="lg:w-1/4 md:w-1/3 w-1/2">
+      <div className="flex flex-wrap justify-center items-center mt-6 lg:mt-8">
+        <div className="w-1/2 md:w-1/3 lg:w-1/4">
           <div
             className="flex col-span-1 justify-center items-center py-8 cursor-pointer"
             style={{ height: 120 }}
           >
             <Aiesec
               aria-label={"AIESEC-Logo"}
-              className="max-h-8 w-full h-full"
+              className="w-full h-full max-h-8"
             />
           </div>
         </div>
-        <div className="lg:w-1/4 md:w-1/3 w-1/2">
+        <div className="w-1/2 md:w-1/3 lg:w-1/4">
           <div
-            className="flex col-span-1 justify-center items-center py-8 px-8 cursor-pointer"
+            className="flex col-span-1 justify-center items-center p-8 cursor-pointer"
             style={{ height: 120 }}
           >
             <Elmadeal
               aria-label={"elmadeal-logo"}
-              className="max-h-8 w-full h-full"
+              className="w-full h-full max-h-8"
             />
           </div>
         </div>
-        <div className="lg:w-1/4 md:w-1/3 w-1/2">
+        <div className="w-1/2 md:w-1/3 lg:w-1/4">
           <div
-            className="flex col-span-1 justify-center items-center py-8 px-8 cursor-pointer"
+            className="flex col-span-1 justify-center items-center p-8 cursor-pointer"
             style={{ height: 120 }}
           >
             <Evold
               aria-label={"Evold-logo"}
-              className="max-h-8 w-full h-full"
+              className="w-full h-full max-h-8"
             />
           </div>
         </div>
-        <div className="lg:w-1/4 md:w-1/3 w-1/2">
+        <div className="w-1/2 md:w-1/3 lg:w-1/4">
           <div
             className="flex col-span-1 justify-center items-center py-8 pr-8 cursor-pointer"
             style={{ height: 120 }}
           >
             <Moredev
               aria-label={"Moredev-logo"}
-              className="max-h-8 w-full h-full"
+              className="w-full h-full max-h-8"
             />
           </div>
         </div>

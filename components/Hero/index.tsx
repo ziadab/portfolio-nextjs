@@ -13,23 +13,23 @@ export const Hero = ({}: HeroProps) => {
   return (
     <Layout>
       <div
-        style={{ height: "calc(100vh -  15rem)" }}
         className={clsx(
-          "flex items-c enter justify-between",
+          "flex justify-between items-c enter",
           !hide && "text-white"
         )}
+        style={{ height: "calc(100vh -  15rem)" }}
       >
         <motion.div
-          initial={{ x: "-200%" }}
           animate={{ x: 0 }}
+          className="flex flex-col items-start lg:justify-start lg:w-3/6"
+          initial={{ x: "-200%" }}
           transition={{ duration: 1 }}
-          className="flex flex-col lg:justify-start lg:w-3/6 items-start"
         >
-          <h1 className="lg:text-8xl font-custom font-thin pt-20 lg:pt-0 text-4xl">
+          <h1 className="pt-20 font-custom text-4xl font-thin lg:pt-0 lg:text-8xl">
             Hi, my <br />
             name is <span className="font-normal">Ziad</span>
           </h1>
-          <h1 className="lg:text-2xl font-custom font-light lg:pt-4 text-2xl">
+          <h1 className="font-custom text-2xl font-light lg:pt-4 lg:text-2xl">
             I&#39;m an{" "}
             <span className="font-normal">
               independent fullstack developer & UI/UX designer
@@ -38,18 +38,18 @@ export const Hero = ({}: HeroProps) => {
           </h1>
         </motion.div>
         <motion.div
-          initial={{ x: "200%" }}
           animate={{ x: 0 }}
-          transition={{ duration: 1, delay: 0.5 }}
           className="hidden lg:block"
+          initial={{ x: "200%" }}
+          transition={{ duration: 1, delay: 0.5 }}
         >
           <Image
-            className="rounded-full"
             alt="personal image"
-            src={personal_img}
-            width={275}
+            className="rounded-full"
             height={275}
             objectFit="cover"
+            src={personal_img}
+            width={275}
           />
         </motion.div>
       </div>

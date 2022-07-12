@@ -1,4 +1,4 @@
-import { useMediaQuery } from "@chakra-ui/react";
+// import { useMediaQuery } from "@chakra-ui/react";
 import { Layout } from "components/Layout";
 import { WorkCard } from "components/WorkCard";
 import { motion, useAnimation } from "framer-motion";
@@ -6,7 +6,7 @@ import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
 export const Works = ({}: WorksProps) => {
-  const isMid = useMediaQuery("only screen and (min-width: 1024px)");
+  // const isMid = useMediaQuery("only screen and (min-width: 1024px)");
 
   const control = useAnimation();
   const [ref, inView] = useInView({
@@ -27,17 +27,17 @@ export const Works = ({}: WorksProps) => {
   return (
     <Layout>
       <motion.h1
-        variants={boxVariant}
-        initial="hidden"
         animate={control}
-        transition={{ duration: 0.6 }}
+        className="font-custom text-5xl font-medium"
+        initial="hidden"
         ref={ref}
-        className="font-custom font-medium text-5xl"
+        transition={{ duration: 0.6 }}
+        variants={boxVariant}
       >
         Work
       </motion.h1>
       {/* <WorkCard /> */}
-      <div className="lg:flex lg:justify-between lg:pt-30 pt-12">
+      <div className="pt-12 lg:flex lg:justify-between lg:pt-30">
         <div className="lg:flex lg:flex-col lg:w-3/6">
           <WorkCard className="lg:pr-12" />
           <WorkCard className="lg:pr-12" />

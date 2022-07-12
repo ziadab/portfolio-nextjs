@@ -14,19 +14,19 @@ export const Navbar = ({}: NavbarProps) => {
 
   return (
     <motion.header
-      initial={{ y: -200 }}
       animate={{ y: 0 }}
-      transition={{ duration: 1.2, delay: 0.5 }}
       className={clsx(!hide && "text-white")}
+      initial={{ y: -200 }}
+      transition={{ duration: 1.2, delay: 0.5 }}
     >
-      <div className="max-w-screen-xl lg:pt-20 lg:px-24 lg:pb-10 p-8 mx-auto">
-        <div className="flex items-center justify-between space-x-4 lg:space-x-10">
-          <div className="flex lg:w-0 lg:flex-1">
+      <div className="p-8 mx-auto max-w-screen-xl lg:px-24 lg:pt-20 lg:pb-10">
+        <div className="flex justify-between items-center space-x-4 lg:space-x-10">
+          <div className="flex lg:flex-1 lg:w-0">
             {/* <span className="w-20 h-10 bg-gray-200 rounded-lg"></span> */}
-            <span className="font-custom font-medium text-lg">Ziad</span>
+            <span className="font-custom text-lg font-medium">Ziad</span>
           </div>
 
-          <nav className="hidden space-x-8 text-lg font-custom font-light md:flex">
+          <nav className="hidden space-x-8 font-custom text-lg font-light md:flex">
             {Links.map((link, index) => {
               return (
                 <Link key={index} href={link.path}>
@@ -38,7 +38,7 @@ export const Navbar = ({}: NavbarProps) => {
 
           <div className="lg:hidden">
             <HamburgerIcon color="white" h={18} w={18} onClick={onOpen} />
-            <CustomDrawer onClose={onClose} isOpen={isOpen} />
+            <CustomDrawer isOpen={isOpen} onClose={onClose} />
           </div>
         </div>
       </div>

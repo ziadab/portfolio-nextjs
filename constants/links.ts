@@ -5,10 +5,6 @@ export const Links = [
   },
   {
     path: "#",
-    text: "Blog",
-  },
-  {
-    path: "#",
     text: "Projects",
   },
   {

@@ -25,22 +25,18 @@ export const WorkCard = ({
   };
 
   return (
-    <motion.div
-      ref={ref}
-      variants={boxVariant}
-      initial="hidden"
+    <motion.a
       animate={control}
-      transition={{ duration: 0.6 }}
+      className={className}
+      href="#"
+      initial="hidden"
+      ref={ref}
       style={style}
-      className={clsx("mb-8", className)}
+      transition={{ duration: 0.6 }}
+      variants={boxVariant}
     >
-      <div className={classNameTextBox}>
-        <h1 className="font-custom font-medium lg:text-2xl">Title</h1>
-        <h4 className="font-custom font-light lg:text-lg">With xi tasila</h4>
-      </div>
-
       <div
-        className="lg:h-[20rem] h-96 w-full"
+        className="w-full h-96 lg:h-[20rem]"
         style={{
           backgroundImage: "url(https://picsum.photos/1202)",
           backgroundPosition: "center",
@@ -49,7 +45,11 @@ export const WorkCard = ({
           objectFit: "cover",
         }}
       ></div>
-    </motion.div>
+      <div className={clsx(classNameTextBox, "mt-4", "mb-8")}>
+        <h1 className="font-custom font-medium lg:text-2xl">Title</h1>
+        <h4 className="font-custom font-light lg:text-lg">With xi tasila</h4>
+      </div>
+    </motion.a>
   );
 };
 
