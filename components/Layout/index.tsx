@@ -1,6 +1,9 @@
-export const Layout = ({ children }: LayoutProps) => {
+export const Layout = ({ children, id }: LayoutProps) => {
   return (
-    <section className="max-w-screen-xl lg:pt-20 lg:px-24 lg:pb-10 p-8 mx-auto transition-all">
+    <section
+      className="p-8 mx-auto max-w-screen-xl transition-all lg:px-24 lg:pt-20 lg:pb-10"
+      id={id}
+    >
       {children}
     </section>
   );
@@ -8,4 +11,5 @@ export const Layout = ({ children }: LayoutProps) => {
 
 export interface LayoutProps {
   children: React.ReactNode;
+  id?: string;
 }

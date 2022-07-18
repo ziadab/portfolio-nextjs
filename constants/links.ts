@@ -1,6 +1,6 @@
 export const Links = [
   {
-    path: "#",
+    path: "#AboutMe",
     text: "About",
   },
   {

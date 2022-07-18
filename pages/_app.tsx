@@ -1,4 +1,4 @@
-import "../styles/globals.css";
+import "../styles/globals.scss";
 import type { AppProps } from "next/app";
 import { ChakraProvider } from "@chakra-ui/react";
 import { Navbar } from "components";
@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <HideContext.Provider value={hide}>
         <Navbar />
         <Component {...pageProps} />
-        <style jsx global>
+        <style global jsx>
           {`
             #__next {
               background-color: ${hide ? "white" : "black"};

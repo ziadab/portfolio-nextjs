@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Layout } from "components/Layout";
 import { useInView } from "react-intersection-observer";
 import { useAnimation, motion } from "framer-motion";
+import { Aiesec, Elmadeal, Evold, Moredev } from "components/icons";
 
 export const AboutMe = ({}: AboutMeProps) => {
   const h1control = useAnimation();
@@ -21,7 +22,7 @@ export const AboutMe = ({}: AboutMeProps) => {
   };
 
   return (
-    <Layout>
+    <Layout id="AboutMe">
       <div>
         <motion.h1
           animate={h1control}
@@ -59,6 +60,21 @@ export const AboutMe = ({}: AboutMeProps) => {
           <br />
           <br />
         </motion.p>
+        <motion.div
+          animate={h1control}
+          initial="hidden"
+          ref={h1ref}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          variants={boxVariant}
+        >
+          <p className="font-custom text-lg font-medium">Trusted By: </p>
+          <div className="flex items-center mt-3">
+            <Aiesec className="h-6" />
+            <Elmadeal className="ml-6 h-6" />
+            <Evold className="ml-6 h-6" />
+            <Moredev className="ml-6 h-6" />
+          </div>
+        </motion.div>
       </div>
     </Layout>
   );

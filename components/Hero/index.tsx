@@ -13,10 +13,7 @@ export const Hero = ({}: HeroProps) => {
   return (
     <Layout>
       <div
-        className={clsx(
-          "flex justify-between items-c enter",
-          !hide && "text-white"
-        )}
+        className={clsx("flex justify-between ", !hide && "text-white")}
         style={{ height: "calc(100vh -  15rem)" }}
       >
         <motion.div
@@ -34,7 +31,8 @@ export const Hero = ({}: HeroProps) => {
             <span className="font-normal">
               independent fullstack developer & UI/UX designer
             </span>{" "}
-            from Kenitra, Morocco.
+            based in Morocco. Who helps to turn ideas into accessible
+            experiences.
           </h1>
         </motion.div>
         <motion.div
