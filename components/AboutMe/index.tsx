@@ -22,7 +22,7 @@ export const AboutMe = ({}: AboutMeProps) => {
   };
 
   return (
-    <Layout id="AboutMe">
+    <Layout className="lg:pt-0" id="AboutMe">
       <div>
         <motion.h1
           animate={h1control}
