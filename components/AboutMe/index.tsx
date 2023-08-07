@@ -41,22 +41,34 @@ export const AboutMe = ({}: AboutMeProps) => {
           transition={{ duration: 0.6, delay: 0.4 }}
           variants={boxVariant}
         >
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
-          labore dolorum beatae error similique nisi eius suscipit, numquam
-          commodi, enim, minima sapiente aut deserunt cum quae quisquam quas a
-          odio.
+          Meet Ziad, a versatile fullstack freelancer renowned for his
+          exceptional coding skills and boundless creativity. Under his personal
+          brand, he embraces the ever-evolving world of technology while
+          nurturing a deep fascination for artificial intelligence and
+          multilingualism. Ziad&rsquo;s journey is defined by his relentless
+          pursuit of knowledge, not only in the realms of coding and AI but also
+          in mastering new languages.
           <br />
           <br />
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
-          labore dolorum beatae error similique nisi eius suscipit, numquam
-          commodi, enim, minima sapiente aut deserunt cum quae quisquam quas a
-          odio.
+          Among Ziad&rsquo;s remarkable achievements, he stands as the visionary
+          mind behind the Katarina Slayer Bot. Initially conceived to address
+          common B2C challenges, the bot&rsquo;s impact transcended its original
+          purpose, becoming an indispensable tool across various departments.
+          His involvement with Elmadeal, a multinational salon management
+          platform, demonstrates his ability to fuse technology with business,
+          facilitating seamless client-salon interactions on a global scale.
+          Ziad&rsquo;s ingenuity further shines through in his creation of a
+          YouTube Converter with Metadata, revolutionizing how music enthusiasts
+          personalize their audio files by embedding detailed information using
+          Spotify API integration.
           <br />
           <br />
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
-          labore dolorum beatae error similique nisi eius suscipit, numquam
-          commodi, enim, minima sapiente aut deserunt cum quae quisquam quas a
-          odio.
+          As Ziad forges ahead on his dynamic journey, his determination to
+          explore the frontiers of AI and language acquisition remains
+          unwavering. Rooted in a profound commitment to innovation and driven
+          by a passion for solving real-world problems, Ziad continues to carve
+          a distinctive path in the world of technology, leaving an indelible
+          mark with every project he undertakes.
           <br />
           <br />
         </motion.p>

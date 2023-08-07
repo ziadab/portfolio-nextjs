@@ -11,4 +11,8 @@ export const Links = [
     path: "#",
     text: "Contact",
   },
+  {
+    path: "elevator-pitch",
+    text: "Elevator Pitch",
+  },
 ];

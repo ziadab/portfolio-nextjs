@@ -18,7 +18,7 @@ export const Hero = ({}: HeroProps) => {
       >
         <motion.div
           animate={{ x: 0 }}
-          className="flex flex-col items-start lg:justify-start lg:w-3/6"
+          className="flex flex-col items-start lg:w-3/6 lg:justify-start"
           initial={{ x: "-200%" }}
           transition={{ duration: 1 }}
         >
