@@ -4,15 +4,15 @@ export const Links = [
     text: "About",
   },
   {
-    path: "#",
-    text: "Projects",
-  },
-  {
-    path: "#",
-    text: "Contact",
-  },
-  {
-    path: "elevator-pitch",
+    path: "#elevator-pitch",
     text: "Elevator Pitch",
   },
+  {
+    path: "#portfolio",
+    text: "Portfolio",
+  },
+  // {
+  //   path: "#",
+  //   text: "Contact",
+  // },
 ];

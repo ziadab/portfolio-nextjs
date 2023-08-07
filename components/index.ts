@@ -7,3 +7,4 @@ export * from "./Works";
 export * from "./WorkCard";
 export * from "./SelectedClient";
 export * from "./Skills";
+export * from "./ElavatorPitch";
